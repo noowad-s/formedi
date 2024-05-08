@@ -13,6 +13,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className={styles.scroll}>
+        <Image src="/imgs/main_scroll.png" alt="Logo Image" width={36} height={21}/>
+      </div>
       <div className={styles.howContainer}>
         <div className={styles.how}>
           How to use?
