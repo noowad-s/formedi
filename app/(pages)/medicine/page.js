@@ -5,7 +5,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from './medicine.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
 import Modal from '@/app/components/Modal/medicineModal'; // 모달 컴포넌트 import
 import useMedicineModal from '@/app/hooks/useMedicineModal'; // 모달 관련 hook import
 
@@ -35,7 +34,7 @@ export default function Medicine() {
             <div style={{ position: 'absolute', top: '245px', left: '692px', color: '#FFF', fontSize: '48px', fontWeight: 700 }}>
                 Are you worried because<br/>the pharmacy is closed?
             </div>
-            <div style={{ position: 'absolute', top: '370px', left: '692px', color: '#69BC2E', fontSize: '16px', fontWeight: 500 }}>
+            <div style={{ position: 'absolute', top: '400px', left: '692px', color: '#69BC2E', fontSize: '16px', fontWeight: 500 }}>
                 Find the medicine at the convenience store easily.
             </div>
             </div>
@@ -61,7 +60,7 @@ export default function Medicine() {
             <div className={styles.listContainer}>
                 {medicines.map((medicine, index) => (
                     <div key={medicine.id} className={styles.listItemContainer}>
-                        <Image src={medicine.medicine_image} alt="Medicine" width={340} height={240} style={{ borderRadius: '12px' }}/>
+                        <Image src={medicine.medicine_image} alt="Medicine" className={styles.medicineImage} width={340} height={240}/>
                         <div className={styles.medicineDetail}>
                             <p className={styles.medicineText}>{medicine.medicine_name_en}</p>
                             <button
