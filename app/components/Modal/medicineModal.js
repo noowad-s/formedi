@@ -1,4 +1,5 @@
 // medicineModal.js
+/* eslint-disable */
 
 import React, { useCallback, useRef, useEffect, useState } from 'react';
 import styles from './medicineModal.module.css';
