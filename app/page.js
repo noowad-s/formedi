@@ -1,15 +1,12 @@
 import React from 'react';
-import styles from './styles/home.module.css';
 import Image from 'next/image';
+import styles from './styles/Home.module.css';
 
 export default function Home() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.contentContainer}>
         <div className={styles.container}>
-          {/* <div className={styles.content}>
-            ForMedi
-          </div> */}
           <Image src="/imgs/main_logo.png" alt="Logo Image" width={760} height={165} style={{ marginBottom: '40px' }}/>
           <div className={styles.secondContent}>
             Easy to find foreign language-speaking<br/>medical institutions in Seoul!
@@ -27,7 +24,11 @@ export default function Home() {
               #Search
             </div>
             <div className={styles.boxText}>
-              Users can search for<br/>pharmacies/hospitals with<br/>medication guidance in the<br/>language they want and<br/>search for locations.
+              Users can search for<br/>
+              pharmacies/hospitals with<br/>
+              medication guidance in the<br/>
+              language they want and<br/>
+              search for locations.
             </div>
           </div>
           <div className={styles.descriptionItem}>
@@ -36,7 +37,11 @@ export default function Home() {
               #Medicine
             </div>
             <div className={styles.boxText}>
-              Additionally, it provides<br/>information on 13<br/>preparatory medicines you<br/>can buy at convenience<br/>stores.
+              Additionally, it provides<br/>
+              information on 13<br/>
+              preparatory medicines you<br/>
+              can buy at convenience<br/>
+              stores.
             </div>
           </div>
           <div className={styles.descriptionItem}>
@@ -45,7 +50,10 @@ export default function Home() {
               #Language
             </div>
             <div className={styles.boxText}>
-              Our service is available by<br/>translating into various<br/>languages, and you can set<br/>the language on My Page.
+              Our service is available by<br/>
+              translating into various<br/>
+              languages, and you can set<br/>
+              the language on My Page.
             </div>
           </div>
         </div>

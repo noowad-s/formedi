@@ -18,17 +18,12 @@ export default function Medicine() {
                 // 응답이 성공하면 데이터를 상태에 저장
                 setMedicines(response.data);
             })
-            .catch(error => {
-                // 오류 처리
-                console.error('Error fetching medicines:', error);
-            });
     }, []); // 빈 배열을 전달하여 컴포넌트가 처음 렌더링될 때 한 번만 호출
 
     // 모달 상태 및 토글 함수
     // const { isShowing, toggle } = useMedicineModal();
     const { isShowing, toggle, selectedMedicineId } = useMedicineModal(); // selectedMedicineId 추가
     useEffect(() => {
-        console.log("isShowing:", isShowing);
     }, [isShowing]);
 
     return (
